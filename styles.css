@@ -432,11 +432,11 @@ body {
   }
 }
 
-/* Work - 1928px */
+/* Work - 1574px */
 .work {
   position: relative;
   width: 1920px;
-  height: 1928px;
+  height: 1574px;
   background: #000000;
   overflow: hidden;
 }
@@ -454,9 +454,9 @@ body {
 .work__title {
   font-family: 'Pretendard', sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 40px;
   line-height: normal;
-  letter-spacing: -0.64px;
+  letter-spacing: -0.8px;
   color: #ffffff;
   white-space: nowrap;
 }
@@ -465,7 +465,7 @@ body {
   width: 110px;
   height: 1px;
   background: #ffffff;
-  margin-top: 46px;
+  margin-top: 38px;
 }
 
 .work__card {
@@ -570,6 +570,36 @@ body {
   top: calc(50% - 11px);
 }
 
+.work__card--3 {
+  left: 95px;
+  top: 933px;
+}
+
+.work__card--3 .work__card-bg img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+
+.work__card-title--dark {
+  color: #1d1d1d;
+}
+
+.work__card-meta--dark {
+  color: #333333;
+}
+
+.work__card--3 .work__card-meta--1 {
+  top: calc(50% - 57px);
+}
+
+.work__card--3 .work__card-meta--2 {
+  top: calc(50% - 30px);
+}
+
 /* Work Detail Page */
 .portfolio--detail {
   background: #000000;
@@ -589,9 +619,10 @@ body {
   top: 20px;
   z-index: 10;
   font-family: 'Pretendard', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: -0.32px;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.8px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -602,6 +633,8 @@ body {
   top: 54px;
   width: 1220px;
   height: 763px;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .work-detail__hero img {
@@ -609,6 +642,13 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.work-detail__title,
+.work-detail__meta,
+.work-detail__overview-title,
+.work-detail__overview-text {
+  z-index: 2;
 }
 
 .work-detail__title {
@@ -680,6 +720,11 @@ body {
   letter-spacing: -0.36px;
 }
 
+.work-detail__overview-text--misopay {
+  width: 440px;
+  letter-spacing: -0.36px;
+}
+
 .work-detail__overview-text p {
   margin: 0;
 }
@@ -696,8 +741,9 @@ body {
 .work-detail__columns {
   display: flex;
   gap: 60px;
-  padding-left: 90px;
+  justify-content: center;
   align-items: flex-start;
+  width: 100%;
 }
 
 .work-detail__column {
@@ -714,7 +760,8 @@ body {
 .work-detail__row {
   display: flex;
   gap: 60px;
-  padding-left: 90px;
+  justify-content: center;
+  width: 100%;
 }
 
 .work-detail__row + .work-detail__row {
@@ -743,4 +790,50 @@ body {
 
 .work-detail--jarada {
   padding-bottom: 200px;
+}
+
+.work-detail--misopay .work-detail__meta {
+  top: 304px;
+}
+
+.work-detail--misopay .work-detail__overview-title {
+  top: 462px;
+}
+
+.work-detail--misopay .work-detail__overview-text {
+  top: 537px;
+}
+
+.work-detail__gallery--misopay {
+  margin-top: 977px;
+}
+
+.work-detail__gallery--misopay .work-detail__row + .work-detail__row {
+  margin-top: 99px;
+}
+
+.work-detail__row--misopay {
+  align-items: flex-start;
+}
+
+.work-detail__screen--pc {
+  width: 500px;
+}
+
+.work-detail__screen--mo {
+  width: 230px;
+}
+
+.work-detail--misopay {
+  padding-bottom: 200px;
+}
+
+.work-detail--misopay .work-detail__title span:not(:first-child) {
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: -0.88px;
+}
+
+.work-detail__overview-text--misopay p + p {
+  margin-top: 12px;
 }
