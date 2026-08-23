@@ -1071,7 +1071,14 @@ body {
     width: 100%;
     height: auto;
     background-attachment: scroll;
+    background-image: url('images/skill-bg-mo.png');
+    background-size: cover;
     background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+
+  .about-skill__overlay {
+    display: none;
   }
 
   .about {
@@ -1192,11 +1199,7 @@ body {
     height: auto;
     overflow: visible;
     padding: 40px 28px 48px;
-    background-color: #050505;
-    background-image: url('images/skill-bg-mo.png');
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
+    background: none;
   }
 
   .skill__title,
@@ -1225,7 +1228,7 @@ body {
 
   .skill__grid {
     display: grid;
-    grid-template-columns: repeat(4, 60px);
+    grid-template-columns: repeat(4, 50px);
     justify-content: space-between;
     width: 100%;
     margin-top: 40px;
@@ -1239,8 +1242,8 @@ body {
   .skill__grid .skill__icon,
   .skill__grid .skill__icon--ps,
   .skill__grid .skill__icon--ai {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 
   .work {
