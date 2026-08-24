@@ -41,9 +41,7 @@ body {
 }
 
 .hero__overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(40, 2, 2, 0.3);
+  display: none;
 }
 
 .hero__title {
@@ -62,7 +60,7 @@ body {
   font-size: 150px;
   line-height: 140px;
   letter-spacing: -3px;
-  color: #ffffff;
+  color: #000000;
   white-space: nowrap;
   opacity: 0;
   transform: translateY(30px);
