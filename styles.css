@@ -1252,8 +1252,8 @@ body {
     overflow: visible;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 48px 20px 32px;
+    align-items: stretch;
+    padding: 48px 0 0;
   }
 
   .work__header {
@@ -1286,7 +1286,8 @@ body {
     width: 100%;
     height: auto;
     aspect-ratio: 402 / 220;
-    margin-bottom: 16px;
+    margin-bottom: 0;
+    box-shadow: none;
   }
 
   .work__card-bg picture,
@@ -1378,5 +1379,291 @@ body {
   .footer__copy {
     text-align: center;
     font-size: 12px;
+  }
+
+  .portfolio--detail {
+    width: 100%;
+    background: #000000;
+  }
+
+  .work-detail,
+  .work-detail--jarada,
+  .work-detail--misopay,
+  .work-detail--daerim {
+    width: 100%;
+    padding-bottom: 48px;
+    overflow: visible;
+  }
+
+  .work-detail__back {
+    left: 16px;
+    top: 12px;
+    font-size: 28px;
+    letter-spacing: -0.56px;
+  }
+
+  .work-detail__hero {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .work-detail__hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .work-detail__title,
+  .work-detail__meta,
+  .work-detail__overview-title,
+  .work-detail__overview-text,
+  .work-detail--misopay .work-detail__meta,
+  .work-detail--misopay .work-detail__overview-title,
+  .work-detail--misopay .work-detail__overview-text,
+  .work-detail--daerim .work-detail__meta,
+  .work-detail--daerim .work-detail__overview-title,
+  .work-detail--daerim .work-detail__overview-text {
+    position: static;
+    left: auto;
+    top: auto;
+    width: auto;
+  }
+
+  .work-detail__title,
+  .work-detail__title--daerim {
+    width: auto;
+    margin: 24px 20px 0;
+    font-size: 24px;
+    letter-spacing: -0.48px;
+  }
+
+  .work-detail--misopay .work-detail__title span:not(:first-child) {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+  }
+
+  .work-detail__meta {
+    margin: 12px 20px 0;
+  }
+
+  .work-detail__meta li {
+    font-size: 12px;
+    letter-spacing: -0.24px;
+    white-space: normal;
+  }
+
+  .work-detail__meta li + li {
+    margin-top: 4px;
+  }
+
+  .work-detail__overview-title {
+    margin: 28px 20px 0;
+    font-size: 24px;
+    letter-spacing: -0.48px;
+  }
+
+  .work-detail__overview-text,
+  .work-detail__overview-text--jarada,
+  .work-detail__overview-text--misopay,
+  .work-detail__overview-text--daerim {
+    width: auto;
+    margin: 12px 20px 0;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+  }
+
+  .work-detail__overview-text br {
+    display: none;
+  }
+
+  .work-detail__gallery,
+  .work-detail__gallery--jarada,
+  .work-detail__gallery--misopay,
+  .work-detail__gallery--daerim {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .work-detail__row,
+  .work-detail__row + .work-detail__row,
+  .work-detail__row:nth-child(3),
+  .work-detail__gallery--jarada .work-detail__row,
+  .work-detail__gallery--misopay .work-detail__row {
+    margin-top: 16px;
+    gap: 12px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .work-detail .work-detail__screen,
+  .work-detail .work-detail__screen--wide,
+  .work-detail .work-detail__screen--pc,
+  .work-detail .work-detail__screen--mo,
+  .work-detail .work-detail__screen--jarada-main,
+  .work-detail .work-detail__screen--jarada-col,
+  .work-detail .work-detail__screen--misopay-main,
+  .work-detail .work-detail__screen--misopay-mobile,
+  .work-detail .work-detail__screen--misopay-sub,
+  .work-detail .work-detail__screen--admin,
+  .work-detail .work-detail__screen--admin-login {
+    width: calc(50% - 6px);
+    flex-shrink: 1;
+    margin: 0;
+  }
+
+  .work-detail__gallery--jarada {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .work-detail__gallery--jarada .work-detail__row,
+  .work-detail__gallery--jarada .work-detail__row + .work-detail__row,
+  .work-detail__gallery--jarada .work-detail__row:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .work-detail__stack--jarada {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .work-detail .work-detail__screen--jarada-main {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .work-detail .work-detail__screen--jarada-col {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .work-detail__gallery--jarada .work-detail__screen img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: top center;
+  }
+
+  .work-detail__gallery--misopay {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .work-detail__gallery--misopay .work-detail__row--misopay-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: calc(60 / 1920 * 100%);
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .work-detail .work-detail__screen--misopay-main {
+    width: calc(1480 / 1920 * 100%);
+    flex-shrink: 0;
+  }
+
+  .work-detail .work-detail__screen--misopay-mobile {
+    width: calc(380 / 1920 * 100%);
+    flex-shrink: 0;
+  }
+
+  .work-detail__gallery--misopay .work-detail__row:not(.work-detail__row--misopay-main) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .work-detail .work-detail__screen--misopay-sub {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .work-detail__gallery--misopay .work-detail__screen img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: top center;
+  }
+
+  .work-detail__gallery--daerim {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .work-detail__gallery--daerim .work-detail__row,
+  .work-detail__gallery--daerim .work-detail__row + .work-detail__row,
+  .work-detail__gallery--daerim .work-detail__row:nth-child(3),
+  .work-detail__gallery--daerim .work-detail__row--daerim {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .work-detail__gallery--daerim .work-detail__screen--mo {
+    width: calc((100% - 40px) / 2);
+    flex-shrink: 0;
+  }
+
+  .work-detail__gallery--daerim .work-detail__row--daerim-admin {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+
+  .work-detail .work-detail__screen--admin,
+  .work-detail .work-detail__screen--admin-login {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .work-detail__gallery--daerim .work-detail__screen img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: top center;
   }
 }
