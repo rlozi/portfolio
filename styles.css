@@ -40,62 +40,88 @@ body {
   object-fit: cover;
 }
 
-.hero__overlay {
-  display: none;
+.hero__header {
+  position: absolute;
+  top: 42px;
+  left: 80px;
+  right: 80px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__brand,
+.hero__nav a {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero__nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
 }
 
 .hero__title {
   position: absolute;
   left: 50%;
-  top: 262px;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: flex-end;
-  gap: 2px;
-}
-
-.hero__text {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  margin: 0;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 800;
   font-size: 150px;
-  line-height: 140px;
-  letter-spacing: -3px;
+  line-height: 1;
+  letter-spacing: -0.04em;
   color: #000000;
   white-space: nowrap;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: hero-text-rise 1s ease-out forwards;
 }
 
-.hero__dot {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  opacity: 0;
-  transform: scale(0);
-  animation: hero-dot-pop 0.5s ease-out 0.2s forwards;
+.hero__letter {
+  position: relative;
+  display: inline-block;
 }
 
-@keyframes hero-text-rise {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.hero__letter--p::before,
+.hero__letter--o::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background: #000000;
 }
 
-@keyframes hero-dot-pop {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  70% {
-    opacity: 1;
-    transform: scale(1.12);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+.hero__letter--p::before {
+  top: 8px;
+}
+
+.hero__letter--o::after {
+  bottom: 8px;
+}
+
+.hero__roles {
+  position: absolute;
+  left: 80px;
+  bottom: 42px;
+  z-index: 2;
+  list-style: none;
+}
+
+.hero__roles li {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 /* About + Skill */
@@ -398,13 +424,6 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero__text,
-  .hero__dot {
-    animation: none;
-    opacity: 1;
-    transform: none;
-  }
-
   .about-skill {
     background-attachment: scroll;
   }
@@ -1045,24 +1064,52 @@ body {
 
   .hero {
     width: 100%;
-    height: 320px;
+    height: 360px;
+  }
+
+  .hero__header {
+    top: 16px;
+    left: 16px;
+    right: 16px;
+  }
+
+  .hero__brand,
+  .hero__nav a {
+    font-size: 11px;
+    letter-spacing: 0.02em;
+  }
+
+  .hero__nav {
+    gap: 12px;
   }
 
   .hero__title {
-    top: 50%;
-    transform: translate(-50%, -50%);
-    align-items: flex-end;
+    font-size: 40px;
+    letter-spacing: -0.8px;
   }
 
-  .hero__text {
-    font-size: 48px;
-    line-height: 46px;
-    letter-spacing: -1px;
+  .hero__letter--p::before,
+  .hero__letter--o::after {
+    height: 4px;
   }
 
-  .hero__dot {
-    width: 8px;
-    height: 8px;
+  .hero__letter--p::before {
+    top: 2px;
+  }
+
+  .hero__letter--o::after {
+    bottom: 2px;
+  }
+
+  .hero__roles {
+    left: 16px;
+    bottom: 16px;
+  }
+
+  .hero__roles li {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
   }
 
   .about-skill {

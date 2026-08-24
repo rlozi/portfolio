@@ -16,19 +16,31 @@
     <section class="hero">
       <div class="hero__bg">
         <img src="images/main.png" alt="">
-        <div class="hero__overlay"></div>
       </div>
-      <div class="hero__title">
-        <p class="hero__text">PORTFOLIO</p>
-        <img class="hero__dot" src="images/ellipse.svg" alt="">
-      </div>
+
+      <header class="hero__header">
+        <p class="hero__brand">LEE EUNJI</p>
+        <nav class="hero__nav" aria-label="메인 메뉴">
+          <a href="#about">ABOUT</a>
+          <a href="#work">PROJECT</a>
+          <a href="#contact">CONTACK</a>
+        </nav>
+      </header>
+
+      <h1 class="hero__title"><span class="hero__letter hero__letter--p">P</span>ORTFOLI<span class="hero__letter hero__letter--o">O</span></h1>
+
+      <ul class="hero__roles">
+        <li>WEB DESIGN</li>
+        <li>UX/UI DESIGN</li>
+        <li>CONTENT DESIGN</li>
+      </ul>
     </section>
 
     <!-- About + Skill -->
     <div class="about-skill">
       <div class="about-skill__overlay" aria-hidden="true"></div>
 
-      <section class="about">
+      <section class="about" id="about">
         <p class="about__label">ABOUT</p>
 
         <div class="about__profile">
@@ -239,7 +251,7 @@
       </a>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="footer__email">
         <p class="footer__email-label">Email</p>
         <p class="footer__email-sep">|</p>
