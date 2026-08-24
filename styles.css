@@ -84,6 +84,10 @@ body {
   white-space: nowrap;
 }
 
+.hero__title-f {
+  color: #FF6734;
+}
+
 .hero__roles {
   position: absolute;
   left: 80px;
