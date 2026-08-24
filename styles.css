@@ -84,29 +84,6 @@ body {
   white-space: nowrap;
 }
 
-.hero__letter {
-  position: relative;
-  display: inline-block;
-}
-
-.hero__letter--p::before,
-.hero__letter--o::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 12px;
-  background: #000000;
-}
-
-.hero__letter--p::before {
-  top: 8px;
-}
-
-.hero__letter--o::after {
-  bottom: 8px;
-}
-
 .hero__roles {
   position: absolute;
   left: 80px;
@@ -1086,19 +1063,6 @@ body {
   .hero__title {
     font-size: 40px;
     letter-spacing: -0.8px;
-  }
-
-  .hero__letter--p::before,
-  .hero__letter--o::after {
-    height: 4px;
-  }
-
-  .hero__letter--p::before {
-    top: 2px;
-  }
-
-  .hero__letter--o::after {
-    bottom: 2px;
   }
 
   .hero__roles {
