@@ -1469,12 +1469,27 @@ body {
   .work-detail__overview-text,
   .work-detail__overview-text--jarada,
   .work-detail__overview-text--misopay,
-  .work-detail__overview-text--daerim {
-    width: auto;
+  .work-detail__overview-text--daerim,
+  .work-detail--daerim .work-detail__overview-text,
+  .work-detail--daerim .work-detail__overview-text--daerim {
+    width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
     margin: 12px 20px 0;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: -0.24px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+  }
+
+  .work-detail--daerim .work-detail__overview-text--daerim p,
+  .work-detail--daerim .work-detail__overview-text--daerim p:first-child {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: keep-all;
   }
 
   .work-detail__overview-text br {
