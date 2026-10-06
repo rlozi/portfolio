@@ -143,7 +143,7 @@ body {
 .hero__roles {
   position: absolute;
   left: 60px;
-  top: 708px;
+  top: 734px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -616,7 +616,7 @@ body {
 
 .work__card--2 {
   left: 985px;
-  top: 337px;
+  top: 933px;
 }
 
 .work__card--2 .work__card-bg img {
@@ -640,8 +640,8 @@ body {
 }
 
 .work__card--3 {
-  left: 95px;
-  top: 933px;
+  left: 985px;
+  top: 337px;
 }
 
 .work__card--3 .work__card-bg img {
@@ -670,7 +670,7 @@ body {
 }
 
 .work__card--4 {
-  left: 985px;
+  left: 95px;
   top: 933px;
 }
 
