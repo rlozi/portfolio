@@ -898,24 +898,91 @@ body {
   object-fit: fill;
 }
 
+.work-detail--farm .work-detail__title {
+  top: 36px;
+  font-size: 38px;
+  letter-spacing: -0.76px;
+}
+
+.work-detail--farm .work-detail__meta {
+  top: 148px;
+}
+
 .work-detail--farm .work-detail__meta li {
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.32px;
 }
 
 .work-detail--farm .work-detail__meta li + li {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .work-detail--farm .work-detail__overview-title {
-  top: 350px;
+  top: 238px;
+  font-size: 28px;
+  letter-spacing: -0.56px;
 }
 
 .work-detail--farm .work-detail__overview-text {
-  top: 423px;
+  top: 296px;
   width: 572px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 26px;
   letter-spacing: -0.4px;
+}
+
+.work-detail--misopay .work-detail__problem-title,
+.work-detail--daerim .work-detail__problem-title,
+.work-detail--jarada .work-detail__problem-title,
+.work-detail--cleaning .work-detail__problem-title,
+.work-detail--farm .work-detail__problem-title {
+  position: absolute;
+  left: 60px;
+  top: 518px;
+  z-index: 2;
+  margin: 0;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.work-detail--misopay .work-detail__problem-text,
+.work-detail--daerim .work-detail__problem-text,
+.work-detail--jarada .work-detail__problem-text,
+.work-detail--cleaning .work-detail__problem-text,
+.work-detail--farm .work-detail__problem-text {
+  position: absolute;
+  left: 60px;
+  top: 576px;
+  z-index: 2;
+  width: 572px;
+  margin: 0;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+  color: #cdcdcd;
+}
+
+.work-detail--farm .work-detail__contribution-title {
+  top: 668px;
+  font-size: 28px;
+  letter-spacing: -0.56px;
+}
+
+.work-detail--farm .work-detail__contribution {
+  top: 726px;
+  font-size: 18px;
+}
+
+.work-detail--farm .work-detail__gallery {
+  margin-top: 1019px;
 }
 
 .work-detail__contribution-title {
@@ -961,7 +1028,7 @@ body {
 }
 
 .work-detail__gallery--jarada {
-  margin-top: 1082px;
+  margin-top: 1087px;
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -1061,36 +1128,54 @@ body {
 }
 
 .work-detail--misopay .work-detail__title {
+  top: 36px;
   width: auto;
+  font-size: 38px;
+  letter-spacing: -0.76px;
   white-space: nowrap;
 }
 
 .work-detail--misopay .work-detail__meta {
-  top: 242px;
+  top: 148px;
 }
 
 .work-detail--misopay .work-detail__meta li {
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.32px;
 }
 
 .work-detail--misopay .work-detail__overview-title {
-  top: 348px;
+  top: 238px;
+  font-size: 28px;
+  letter-spacing: -0.56px;
 }
 
 .work-detail--misopay .work-detail__overview-text {
-  top: 421px;
+  top: 296px;
   width: 572px;
 }
 
+.work-detail--misopay .work-detail__problem-title {
+  top: 518px;
+}
+
+.work-detail--misopay .work-detail__problem-text {
+  top: 576px;
+}
+
 .work-detail--misopay .work-detail__contribution-title {
-  top: 643px;
+  top: 668px;
+  font-size: 28px;
+  letter-spacing: -0.56px;
 }
 
 .work-detail--misopay .work-detail__contribution {
-  top: 716px;
+  top: 726px;
   width: 280px;
   font-size: 18px;
-  letter-spacing: -0.36px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
 }
 
 .work-detail--misopay .work-detail__contribution li {
@@ -1098,7 +1183,7 @@ body {
 }
 
 .work-detail__gallery--misopay {
-  margin-top: 1012px;
+  margin-top: 1019px;
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -1149,11 +1234,11 @@ body {
 }
 
 .work-detail--misopay .work-detail__title span:not(:first-child) {
-  margin-top: 8px;
-  font-size: 44px;
-  font-weight: 600;
-  line-height: 50px;
-  letter-spacing: -0.88px;
+  margin-top: 0;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.76px;
 }
 
 .work-detail--daerim .work-detail__hero {
@@ -1168,30 +1253,39 @@ body {
 }
 
 .work-detail--daerim .work-detail__title {
+  top: 36px;
   width: auto;
+  font-size: 38px;
+  letter-spacing: -0.76px;
   white-space: nowrap;
 }
 
 .work-detail--daerim .work-detail__meta {
-  top: 244px;
+  top: 148px;
 }
 
 .work-detail--daerim .work-detail__meta li {
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.32px;
 }
 
 .work-detail--daerim .work-detail__meta li + li {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .work-detail--daerim .work-detail__overview-title {
-  top: 350px;
+  top: 238px;
+  font-size: 28px;
+  letter-spacing: -0.56px;
 }
 
 .work-detail--daerim .work-detail__overview-text {
-  top: 423px;
+  top: 296px;
   width: 572px;
-  letter-spacing: -0.36px;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
 }
 
 .work-detail__overview-text--daerim {
@@ -1207,15 +1301,26 @@ body {
   width: auto;
 }
 
+.work-detail--daerim .work-detail__problem-title {
+  top: 440px;
+}
+
+.work-detail--daerim .work-detail__problem-text {
+  top: 498px;
+}
+
 .work-detail--daerim .work-detail__contribution-title {
-  top: 567px;
+  top: 590px;
+  font-size: 28px;
+  letter-spacing: -0.56px;
 }
 
 .work-detail--daerim .work-detail__contribution {
-  top: 640px;
+  top: 648px;
   width: auto;
   font-size: 18px;
-  letter-spacing: -0.36px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
 }
 
 .work-detail--daerim .work-detail__contribution li {
@@ -1223,7 +1328,7 @@ body {
 }
 
 .work-detail__gallery--daerim {
-  margin-top: 884px;
+  margin-top: 889px;
 }
 
 .work-detail__gallery--daerim .work-detail__row + .work-detail__row {
@@ -1276,11 +1381,11 @@ body {
 }
 
 .work-detail--cleaning .work-detail__title {
-  top: 84.992px;
+  top: 36px;
   width: auto;
-  font-size: 52.376px;
+  font-size: 38px;
   line-height: normal;
-  letter-spacing: -1.0475px;
+  letter-spacing: -0.76px;
 }
 
 .work-detail__site {
@@ -1301,7 +1406,7 @@ body {
 
 .work-detail--cleaning .work-detail__site,
 .work-detail--jarada .work-detail__site {
-  top: 227px;
+  top: 148px;
 }
 
 .work-detail--jarada .work-detail__hero {
@@ -1321,38 +1426,59 @@ body {
   object-fit: fill;
 }
 
+.work-detail--jarada .work-detail__title {
+  top: 36px;
+  font-size: 38px;
+  letter-spacing: -0.76px;
+}
+
 .work-detail--jarada .work-detail__meta {
-  top: 286px;
+  top: 190px;
   height: auto;
 }
 
 .work-detail--jarada .work-detail__meta li {
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.32px;
 }
 
 .work-detail--jarada .work-detail__meta li + li {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .work-detail--jarada .work-detail__overview-title {
-  top: 392px;
+  top: 280px;
+  font-size: 28px;
+  letter-spacing: -0.56px;
 }
 
 .work-detail--jarada .work-detail__overview-text {
-  top: 465px;
+  top: 338px;
   width: 572px;
   letter-spacing: -0.36px;
 }
 
+.work-detail--jarada .work-detail__problem-title {
+  top: 586px;
+}
+
+.work-detail--jarada .work-detail__problem-text {
+  top: 644px;
+}
+
 .work-detail--jarada .work-detail__contribution-title {
-  top: 713px;
+  top: 736px;
+  font-size: 28px;
+  letter-spacing: -0.56px;
 }
 
 .work-detail--jarada .work-detail__contribution {
-  top: 786px;
+  top: 794px;
   width: auto;
   font-size: 18px;
-  letter-spacing: -0.36px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
 }
 
 .work-detail--jarada .work-detail__contribution li {
@@ -1360,48 +1486,57 @@ body {
 }
 
 .work-detail--cleaning .work-detail__meta {
-  top: 286px;
+  top: 190px;
   width: auto;
-  height: 58px;
+  height: auto;
 }
 
 .work-detail--cleaning .work-detail__meta li {
-  position: absolute;
-  left: 0;
-  font-size: 20.95px;
-  line-height: normal;
-  letter-spacing: -0.419px;
+  position: static;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.32px;
 }
 
-.work-detail--cleaning .work-detail__meta li:nth-child(1) { top: 0; }
-.work-detail--cleaning .work-detail__meta li:nth-child(2) { top: 33.52px; }
+.work-detail--cleaning .work-detail__meta li + li {
+  margin-top: 4px;
+}
 
 .work-detail--cleaning .work-detail__overview-title {
-  top: 393.96px;
-  font-size: 41.901px;
+  top: 280px;
+  font-size: 28px;
   line-height: normal;
-  letter-spacing: -0.838px;
+  letter-spacing: -0.56px;
 }
 
 .work-detail--cleaning .work-detail__overview-text {
-  top: 469px;
-  width: 583px;
-  font-size: 18.855px;
-  line-height: 27.236px;
-  letter-spacing: -0.3771px;
+  top: 338px;
+  width: 572px;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+}
+
+.work-detail--cleaning .work-detail__problem-title {
+  top: 560px;
+}
+
+.work-detail--cleaning .work-detail__problem-text {
+  top: 618px;
 }
 
 .work-detail--cleaning .work-detail__contribution-title {
-  top: 700px;
-  font-size: 40px;
-  letter-spacing: -0.8px;
+  top: 710px;
+  font-size: 28px;
+  letter-spacing: -0.56px;
 }
 
 .work-detail--cleaning .work-detail__contribution {
-  top: 773px;
+  top: 768px;
   width: auto;
   font-size: 18px;
-  letter-spacing: -0.36px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
 }
 
 .work-detail--cleaning .work-detail__contribution li {
@@ -2008,7 +2143,12 @@ body {
   }
 
   .work-detail__title,
-  .work-detail__title--daerim {
+  .work-detail__title--daerim,
+  .work-detail--farm .work-detail__title,
+  .work-detail--misopay .work-detail__title,
+  .work-detail--daerim .work-detail__title,
+  .work-detail--jarada .work-detail__title,
+  .work-detail--cleaning .work-detail__title {
     width: auto;
     margin: 24px 20px 0;
     font-size: 24px;
@@ -2025,8 +2165,14 @@ body {
     margin: 12px 20px 0;
   }
 
-  .work-detail__meta li {
+  .work-detail__meta li,
+  .work-detail--farm .work-detail__meta li,
+  .work-detail--misopay .work-detail__meta li,
+  .work-detail--daerim .work-detail__meta li,
+  .work-detail--jarada .work-detail__meta li,
+  .work-detail--cleaning .work-detail__meta li {
     font-size: 12px;
+    line-height: normal;
     letter-spacing: -0.24px;
     white-space: normal;
   }
@@ -2113,8 +2259,24 @@ body {
   }
 
   .work-detail--farm .work-detail__overview-title,
-  .work-detail .work-detail__contribution-title {
+  .work-detail--misopay .work-detail__overview-title,
+  .work-detail--daerim .work-detail__overview-title,
+  .work-detail--jarada .work-detail__overview-title,
+  .work-detail--cleaning .work-detail__overview-title,
+  .work-detail__problem-title,
+  .work-detail--farm .work-detail__problem-title,
+  .work-detail--misopay .work-detail__problem-title,
+  .work-detail--daerim .work-detail__problem-title,
+  .work-detail--jarada .work-detail__problem-title,
+  .work-detail--cleaning .work-detail__problem-title,
+  .work-detail .work-detail__contribution-title,
+  .work-detail--misopay .work-detail__contribution-title,
+  .work-detail--daerim .work-detail__contribution-title,
+  .work-detail--jarada .work-detail__contribution-title,
+  .work-detail--cleaning .work-detail__contribution-title {
     position: static;
+    top: auto;
+    left: auto;
     margin: 28px 20px 0;
     font-size: 24px;
     letter-spacing: -0.48px;
@@ -2122,6 +2284,11 @@ body {
   }
 
   .work-detail--farm .work-detail__overview-text,
+  .work-detail--farm .work-detail__problem-text,
+  .work-detail--misopay .work-detail__problem-text,
+  .work-detail--daerim .work-detail__problem-text,
+  .work-detail--jarada .work-detail__problem-text,
+  .work-detail--cleaning .work-detail__problem-text,
   .work-detail .work-detail__contribution {
     position: static;
     left: auto;
@@ -2142,7 +2309,8 @@ body {
   .work-detail__gallery,
   .work-detail__gallery--jarada,
   .work-detail__gallery--misopay,
-  .work-detail__gallery--daerim {
+  .work-detail__gallery--daerim,
+  .work-detail--farm .work-detail__gallery {
     margin-top: 40px;
     width: 100%;
   }
